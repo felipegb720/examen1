@@ -1,5 +1,6 @@
 package gt.edu.url.examen1.impl;
-import java.util.*;
+import gt.edu.url.examen1.api.ChudnoskyRecursivo;
+import gt.edu.url.examen1.api.ReporteroTenis;
 /**
  *
  * @author Felipe_GB720
@@ -9,25 +10,12 @@ public class Main {
     public static void main(String[] args) {
         
     	System.out.println("Examen Parcial 1");
-    			
-    	Scanner Entrada = new Scanner(System.in);
+        ChudnoskyRecursivo parte2 = new ChudnoskyRecursivo();
+        System.out.println(parte2.calcularPi(3));
+        ReporteroTenis parte3 = new ReporteroTenis();
+        System.out.println(parte3.calcularGanador(2, 5));
+        System.out.println(parte3.calcularCampeon());			
     	
-    	 int A;
-    	 int B;
-    	 
-    	 for (int i=0; i<6; i++){
-    		 
-    		 do {
-    		 
-    		 System.out.print("ingrese los Juegos Ganados de A: ");
-   
-    		 A = Entrada.nextInt();
-  
-    		 System.out.print("ingrese los Juegos Ganados de B: ");
-
-    		 B = Entrada.nextInt();
-    		 
-    		 }while((A+B)<9);
     			 
     	
     	}
